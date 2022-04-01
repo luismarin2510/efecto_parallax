@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Hola profe esta es la evidencia de la clase del 29-03-2022">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luis Marin</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+   <header>
+       <a href='#' class= "logo">logo</a>
+       <ul>
+           <li><a href="#" class="active">home</a></li>
+           <li><a href="#">about</a></li>
+           <li><a href="#">work</a></li>
+           <li><a href="#">contact</a></li>
+       </ul>
+   </header>
+   <section>
+       <img src="stars.png" id="stars">
+       <img src="moon.png" id="moon">
+       <img src="mountains_behind.png" id="mountains_behind">
+       <h2 id= "text">Moon Light</h2>
+       <a href="#sec" id="btn">Explore</a>
+       <img src="mountains_front.png" id="mountains_front">
+   </section>
+   <div class="sec" id="sec">
+       <h2> Efecto Parallax con el scroll</h2>
+       <p>el dolor mismo es el dolor mas el que laboriosamente deleita al sabio justo, 
+        las faltas que le caen. esencial para el entrenamiento de primavera porque 
+        el tiempo mismo Durante algún tiempo, el dolor no es el vehículo en sí mismo, 
+        el dolor es importante para el proceso principal de adipisicación. Eso es un dolor de hecho
+        aquellos que aplauden la mayor parte del cuerpo, que cualquiera de ellos nos devuelve, 
+        las verdades más duras caen sobre nosotros. el dolor en sí es un poco iterativo. 
+        Cuando la incomodidad impide escapar, se necesita cierta razón para encontrar 
+        los inconvenientes y dolores que pueden ocurrir en un momento dado. 
+        Abriré la más mínima molestia y nos lo probaremos.<br><br> dolor mismo es el dolor mas el que laboriosamente deleita al sabio justo, 
+        las faltas que le caen. esencial para el entrenamiento de primavera porque 
+        el tiempo mismo Durante algún tiempo, el dolor no es el vehículo en sí mismo, 
+        el dolor es importante para el proceso principal de adipisicación. Eso es un dolor de hecho
+        aquellos que aplauden la mayor parte del cuerpo, que cualquiera de ellos nos devuelve, 
+        las verdades más duras caen sobre nosotros. el dolor en sí es un poco iterativo.
+        <br><br>el dolor mismo es el dolor mas el que laboriosamente deleita al sabio justo, 
+        las faltas que le caen. esencial para el entrenamiento de primavera porque 
+        el tiempo mismo Durante algún tiempo, el dolor no es el vehículo en sí mismo, 
+        el dolor es importante para el proceso principal de adipisicación. Eso es un dolor de hecho
+        aquellos que aplauden la mayor parte del cuerpo, que cualquiera de ellos nos devuelve, 
+        las verdades más duras caen sobre nosotros. el dolor en sí es un poco iterativo. 
+        Cuando la incomodidad impide escapar, se necesita cierta razón para encontrar 
+        los inconvenientes y dolores que pueden ocurrir en un momento dado. 
+        Abriré la más mínima molestia y nos lo probaremos.</p>
+   </div>
+
+   <script>
+       let stars = document.getElementById('stars');
+       let moon = document.getElementById('moon');
+       let mountains_behind = document.getElementById('mountains_behind');
+       let text = document.getElementById('text');
+       let btn = document.getElementById('btn');
+       let mountains_front = document.getElementById('mountains_front');
+       let header = document.querySelector('header');
+
+       window.addEventListener(`scroll`, function(){
+         let value = window.scrollY;
+         stars.style.left = value = 0.25 + 'px';
+         moon.style.top = value = 1.05 + 'px';
+         mountains_behind.style.top = value = 0.5 + 'px';
+         mountains_behind.style.top = value = 0.5 + 'px';
+         mountains_front.style.top = value = 0 + 'px';
+         text.style.marginRight = value = 4 + 'px';
+         text.style.marginTop = value = 1.5 + 'px';
+         btn.style.marginTop = value = 1.5+ 'px';
+         header.style.top = value = 0.5 +'px';
+       })
+   </script>
+</body>
+</html>
